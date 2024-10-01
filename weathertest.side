@@ -1,0 +1,359 @@
+{
+  "id": "58a3b5f3-c969-4633-b81c-debb1f9cb5b4",
+  "version": "2.0",
+  "name": "weathertest",
+  "url": "https://yandex.ru/pogoda/",
+  "tests": [{
+    "id": "2ce44bf3-f352-4d2e-a6b9-b51027045634",
+    "name": "Untitled",
+    "commands": [{
+      "id": "54477c57-ae59-4801-a0d3-ab43fb289623",
+      "comment": "",
+      "command": "open",
+      "target": "https://yandex.ru/pogoda/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ee82b69-91bd-4733-8ba8-13ce1175a43e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.title-icon",
+      "targets": [
+        ["css=.title-icon", "css:finder"],
+        ["xpath=//div[@id='content_left']/div/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1affac88-f89d-41b1-a199-4fbfb62145d5",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.title-icon",
+      "targets": [
+        ["css=.title-icon", "css:finder"],
+        ["xpath=//div[@id='content_left']/div/a/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fec130a8-e453-4d7f-ba5d-5ec8dbb23386",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input",
+      "targets": [
+        ["css=.mini-suggest-form__input", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3028dea9-8220-4702-ba3d-4b10735eea4d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.mini-suggest-form__input",
+      "targets": [
+        ["css=.mini-suggest-form__input", "css:finder"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Нижний Новгород"
+    }, {
+      "id": "cfb37a27-9921-4a82-a14d-38192b487af9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Нижний Новгород",
+      "targets": [
+        ["linkText=Нижний Новгород", "linkText"],
+        ["css=#suggest-item-708659539cn-0 > .mini-suggest__item-link", "css:finder"],
+        ["xpath=//li[@id='suggest-item-708659539cn-0']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://yandex.ru/pogoda?lat=56.32679749&lon=44.0065155')]", "xpath:href"],
+        ["xpath=//div[12]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af5e0647-b182-444e-9ea4-af4fd2732530",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,197)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1455e08d-0e1a-4efe-8e5f-63a650567886",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1534)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "444d3889-4db1-4afc-a0ba-e1fb8a08afe3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Подробный прогноз на 10 дней",
+      "targets": [
+        ["linkText=Подробный прогноз на 10 дней", "linkText"],
+        ["css=.link_js_inited", "css:finder"],
+        ["xpath=//a[contains(text(),'Подробный прогноз на 10 дней')]", "xpath:link"],
+        ["xpath=//div[@id='content_left']/div[4]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details?lat=56.32679749&lon=44.0065155&lang=ru&via=ms')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Подробный прогноз на 10 дней')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd69f20b-01d7-4e92-a1e7-5a9a949b42f6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=На дорогах",
+      "targets": [
+        ["linkText=На дорогах", "linkText"],
+        ["css=.sc-469220de-3:nth-child(2) > .sc-469220de-4", "css:finder"],
+        ["xpath=//a[contains(text(),'На дорогах')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/auto?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'На дорогах')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5166359e-40ae-4187-970d-2259ac8cbff0",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=На дорогах",
+      "targets": [
+        ["linkText=На дорогах", "linkText"],
+        ["css=.sc-469220de-3:nth-child(2) > .sc-469220de-4", "css:finder"],
+        ["xpath=//a[contains(text(),'На дорогах')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/auto?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'На дорогах')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5645fb1c-8d7b-4350-9e15-1adeb95281fe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=На дорогах",
+      "targets": [
+        ["linkText=На дорогах", "linkText"],
+        ["css=.sc-469220de-3:nth-child(2) > .sc-469220de-4", "css:finder"],
+        ["xpath=//a[contains(text(),'На дорогах')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/auto?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'На дорогах')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "406584e2-1912-4339-a3d6-de0114f343b7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Рыбалка",
+      "targets": [
+        ["linkText=Рыбалка", "linkText"],
+        ["css=.sc-469220de-3:nth-child(3) > .sc-469220de-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Рыбалка')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/fishing?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рыбалка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c5a1582-2ae3-497b-8d5b-59e961bf3b44",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Водный спорт",
+      "targets": [
+        ["linkText=Водный спорт", "linkText"],
+        ["css=.sc-469220de-3:nth-child(4) > .sc-469220de-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Водный спорт')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/watersports?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Водный спорт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4162973b-e662-4d26-8862-a2eb30bc0949",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Сад и огород",
+      "targets": [
+        ["linkText=Сад и огород", "linkText"],
+        ["css=.sc-469220de-3:nth-child(5) > .sc-469220de-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Сад и огород')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/gardening?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Сад и огород')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c8fc539-d209-443c-8926-63758c511fcc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Летний спорт",
+      "targets": [
+        ["linkText=Летний спорт", "linkText"],
+        ["css=.sc-469220de-3:nth-child(6) > .sc-469220de-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Летний спорт')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/running?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Летний спорт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac01eaac-2dca-4980-9037-e4908406780e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Летний спорт",
+      "targets": [
+        ["linkText=Летний спорт", "linkText"],
+        ["css=.sc-469220de-3:nth-child(6) > .sc-469220de-4", "css:finder"],
+        ["xpath=//a[contains(text(),'Летний спорт')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/running?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Летний спорт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f93b7278-3168-4d05-903f-d5d02ffe1e87",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Летний спорт",
+      "targets": [
+        ["linkText=Летний спорт", "linkText"],
+        ["css=.hvNeIu", "css:finder"],
+        ["xpath=//a[contains(text(),'Летний спорт')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/div/div/div/main/div/div/nav/ul/li[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/details/running?lat=56.32679749&lon=44.0065155&lang=ru&via=prsw')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Летний спорт')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e79a6b8-1a3c-474f-961b-f5ed71f42154",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Карта осадков')]",
+      "targets": [
+        ["css=.cEDTIs:nth-child(4) > .sc-aee946a6-4", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/header/div/div[2]/nav/a[3]/span", "xpath:idRelative"],
+        ["xpath=//a[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Карта осадков')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "17fd0e9b-f1a3-4468-95ca-948a2037d849",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Карта осадков",
+      "targets": [
+        ["linkText=Карта осадков", "linkText"],
+        ["css=.cEDTIs:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/div/header/div/div[2]/nav/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/pogoda/ru-RU/maps/nowcast?lat=56.32679749&lon=44.0065155')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Карта осадков')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bfdbaee-7e86-4df3-bdab-3753d008a6c4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Температура')]",
+      "targets": [
+        ["css=.sc-b64e5009-1:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[2]/div/div[2]/div/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Температура')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62785399-f0da-4dc0-b080-5dc56fdd8800",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39a9bfee-b4cf-4e33-8748-16cba266b5be",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Ветер')]",
+      "targets": [
+        ["css=.sc-b64e5009-1:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[2]/div/div[2]/div/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Ветер')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43242f68-889f-49c7-bced-a57b0e9d599f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Давление')]",
+      "targets": [
+        ["css=.sc-b64e5009-1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[2]/div/div[2]/div/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Давление')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4961d386-c047-4611-ad29-2e0dd13e6967",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Глубина снега')]",
+      "targets": [
+        ["css=.sc-b64e5009-1:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[2]/div/div[2]/div/button[5]", "xpath:idRelative"],
+        ["xpath=//button[5]", "xpath:position"],
+        ["xpath=//button[contains(.,'Глубина снега')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "84224a37-6c78-4180-becf-8431d183f293",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//button[contains(.,'Давление')]",
+      "targets": [
+        ["css=.sc-b64e5009-1:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div[2]/div[2]/div/div[2]/div/button[4]", "xpath:idRelative"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Давление')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21fe09c3-4ac2-409c-bf87-d8b24e4e475b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Прогноз на месяц')]",
+      "targets": [
+        ["css=.sc-aee946a6-3:nth-child(3) > .sc-aee946a6-4", "css:finder"],
+        ["xpath=//div[@id='__next']/div/main/div/div/div/header/div/div[2]/nav/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Прогноз на месяц')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5859f9-0a63-437f-9f03-4a24a74baf5d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a6811a2c-1e62-4896-b679-27f6fb9f9cd2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2ce44bf3-f352-4d2e-a6b9-b51027045634"]
+  }],
+  "urls": ["https://yandex.ru/pogoda/"],
+  "plugins": []
+}
